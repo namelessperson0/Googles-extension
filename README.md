@@ -7,7 +7,9 @@ If a website has been visited frequently, then that website is boosted in Brave 
 
 
 
-## Running this extension
+## Running this extension by downloading.
+
+## Running this extension from source code
 
 1. Clone this repository.
 2. Load this directory in Chrome as an [unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked).
