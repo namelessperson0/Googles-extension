@@ -7,7 +7,7 @@ If a website has been visited frequently, then that website is boosted in Brave 
 
 
 
-## Running this extension by downloading.
+<!--## Running this extension by downloading.-->
 
 ## Running this extension from source code
 
