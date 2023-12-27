@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Customized search results for Brave browser. </title>
+  <style>
+    body {
+      min-width: 250px;
+
+    padding: 25px;
+    }
+  </style>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="materialize.min.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <h6>
+    Customized search results for Brave Search engine.
+  </h6>
+
+
+<div id="content">
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="email" type="text">
+      <label class="active" for="email">Enter email</label>
+
+
+    </div>
+
+  </div>
+  <div class="row">
+
+  <div class="col s6">
+
+    <button id="a_submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </div>
+</div>
+</div>
+
+
+
+<div id="a_loader"  class="preloader-wrapper big active" style="display: none;">
+  <div class="spinner-layer spinner-blue">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+      <div class="circle"></div>
+    </div><div class="circle-clipper right">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+<div id="new_content" style="display: none;">
+ <h6> Bookmark and search using <a target="_blank" id="g_id">this link</a> 
+ </h6>
+</div>
+
+  <!-- <script type="module" integrity="sha256-AXYj2rQIoHOp1GSrJVoHhOqphadbmKtqNujaLBmyCt4=" crossorigin="anonymous">
+  import { Octokit } from "https://esm.sh/@octokit/core";
+ </script> -->
+  <script src="popup.js"></script>
+  <div id="typedUrl_div"></div>
+  <script src="materialize.min.js"></script>
+
+</body>
+
+</html>
