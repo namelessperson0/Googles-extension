@@ -1,20 +1,3 @@
-// Copyright 2023 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     https://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-// Event listner for clicks on links in a browser action popup.
-// Open the link in a new tab of the current window.
-
 
 function onAnchorClick(event)
 {
@@ -173,17 +156,28 @@ function buildTypedUrlList(divName)
       // Creating gist 
       async function a()
       {
+
+var t2 = await fetch("k.json")
+var t3 = await t2.json()
+console.log(t3);
+try
+        {
         gist_res = await fetch('https://api.github.com/gists', {
           method: 'POST',
           headers: {
             'Accept': 'application/vnd.github+json',
-            'Authorization': 'Bearer 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',
+            'Authorization': 'Bearer  ',
             'X-GitHub-Api-Version': '2022-11-28',
             'Content-Type': 'application/x-www-form-urlencoded'
           },
           body: '{"description":"Testing gist","public":false,"files":{"goggles-creator.googles":{"content":  "' + gogglesText + '" }  }}'
         });
-
+      }
+      catch(err)
+      {
+        console.log(err);
+        console.log(gogglesText);
+      }
         b = await gist_res.json()
         // console.log(b);
         gist_url = Object.values(b.files)[0]['raw_url']
